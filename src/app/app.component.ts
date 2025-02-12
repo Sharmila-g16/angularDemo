@@ -1,12 +1,25 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NgIf } from '@angular/common';
+import { FormsModule } from '@angular/forms'; // Import FormsModule
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  imports: [NgIf,FormsModule,RouterModule],
+ 
 })
 export class AppComponent {
-  title = 'angularDemo';
+  isDisabled = false;
+  isDisabled1 = true;
+  userName: string = ''; // For two-way binding
+  password= "";
+  first: string = 'Sharmila';
+  second: string = 'Ganta';
+  name: string = this.first + ' ' + this.second; // Concatenated name 
+
+  constructor() {
+    console.log(this.userName);
+  }
 }

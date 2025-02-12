@@ -1,1 +1,37 @@
-{{ title }} 
+<!-- <div>
+  <form>
+    <div class="container mt-2">
+      <label for="UN"><b><i>User name :</i></b></label>
+        <input type="text" style="border-radius: 10px;" [(ngModel)]="userName" class="border-success ms-3 text-center w-25 h-75"  placeholder="Enter UserName" [ngModelOptions]="{standalone: true}">
+    </div>
+      &nbsp;
+    <div class="container"> 
+      <label for="UN"><b><i>Password :</i></b></label>
+        <input type="text" style="border-radius: 10px;" class="border-primary ms-3 text-center w-25 h-75" placeholder="Enter Password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" >
+    </div>
+          &nbsp;
+    <div class="container">
+      <button type="button" class="btn btn-outline-warning text-primary">LOG IN</button>
+    </div>
+  </form>
+</div>
+
+ {{name}} 
+ <br>
+ <br>
+
+ <p>Your username is: <b style="color: brown;">{{ userName }}</b></p><br>
+ <p>Your password is: <b style="color: brown;">{{ password }}</b></p><br>
+ <br>
+ <br>
+
+<br>
+<div [hidden]="false">
+  <input type="text" value="Anguar122" [disabled]="isDisabled">
+</div>
+<div *ngIf=" isDisabled1" >
+  <input type="text" value="Anguar122" [disabled]="isDisabled">
+</div>
+
+ -->
+<router-outlet></router-outlet>
